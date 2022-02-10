@@ -1,0 +1,257 @@
+@media screen and (min-width: 1600px){
+    .area-open-cards{
+        position: absolute;
+        width: 100%;
+        height: 120vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s ease;
+        transform: translateX(100%);
+        opacity: 0;
+        z-index: 7;
+    }
+    .btn_exit{
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        z-index: 5;
+        transform: rotate(45deg);
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+    .btn_exit:hover{
+        transform: rotate(45deg) scale(1.25);
+    }
+    .btn_exit:hover::before{
+        transform: rotate(90deg);
+    }
+    .btn_exit::before{
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(90deg);
+        transition: all 0.4s ease;
+    }
+    .area_exit{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 4;
+    }
+    .open-card-img{
+        width: 50%;
+        height: 100%;
+    }
+    .open-card-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .open-cards{
+        width: 70%;
+        height: 80vh;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        z-index: 6;
+    }
+    .open-card-content{
+        padding: 2.5%;
+        font-family: "Open Sans Light", sans-serif;
+    }
+    .open-card-content p{
+        margin: 2.5% 0%;
+    }
+    .open-card-content a{
+        margin-top: 2.5%;
+        text-decoration: none;
+        padding: 1% 2.5%;
+        border: 2px black solid;
+        border-radius: 0.75rem;
+        color: black;
+    }
+}
+@media screen and (min-width: 1366px) and (max-width: 1599.9px){
+    .area-open-cards{
+        position: absolute;
+        width: 100%;
+        height: 120vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s ease;
+        transform: translateX(100%);
+        opacity: 0;
+        z-index: 7;
+    }
+    .btn_exit{
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        z-index: 5;
+        transform: rotate(45deg);
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+    .btn_exit:hover{
+        transform: rotate(45deg) scale(1.25);
+    }
+    .btn_exit:hover::before{
+        transform: rotate(90deg);
+    }
+    .btn_exit::before{
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(90deg);
+        transition: all 0.4s ease;
+    }
+    .area_exit{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 4;
+    }
+    .open-card-img{
+        width: 50%;
+        height: 100%;
+    }
+    .open-card-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .open-cards{
+        width: 70%;
+        height: 80vh;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        z-index: 6;
+    }
+    .open-card-content{
+        padding: 2.5%;
+        width: 50%;
+        font-family: "Open Sans Light", sans-serif;
+    }
+    .open-card-content p{
+        margin: 2.5% 0%;
+    }
+    .open-card-content h1{
+        font-family: 'Playfair Display', serif;
+    }
+    .open-card-content a{
+        margin-top: 2.5%;
+        text-decoration: none;
+        padding: 1% 2.5%;
+        border: 2px black solid;
+        border-radius: 0.75rem;
+        color: black;
+    }
+}
+@media screen and (max-width: 380px) and (min-width: 375px){
+    .area-open-cards{
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    .btn_exit{
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 8%;
+        right: 5%;
+        z-index: 3;
+        transform: rotate(45deg);
+    }
+    .btn_exit::before{
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: rotate(90deg);
+    }
+    .area_exit{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: 200vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2;
+    }
+    .open-cards{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        background-color: whitesmoke;
+        padding: 5%;
+    }
+    .open-card-content h1{
+        font-family: 'Playfair Display', serif;
+        margin: 5% 0;
+    }
+    .open-card-content p{
+        font-family: "Open Sans Light", sans-serif;
+    }
+    .open-card-content ul{
+        font-family: 'Playfair Display', serif;
+    }
+    .open-card-content a{
+        padding: 5% 15%;
+        text-decoration: none;
+        color: white;
+        background-color: #222222;
+    }
+    .open-card-1{
+        margin-top: 100%;
+    }
+    .open-card-2{
+        margin-top: 120%;
+    }
+}

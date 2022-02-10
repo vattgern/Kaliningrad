@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="../css/gallery-two.css">
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Галерея Калининграда</div>
+        <div class="images">
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/suhaja-trava-v-peske-na-zakate.jpg" alt="River" />
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/nebolshoj-zaliv-v-buhte.jpg" alt="Небольшой залив в бухте" />
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/les-kaliningrad-priroda-most.jpg" alt="Лес" />
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/iurii-stolypin-natsionalnyi-park-ladozhskie-shkhery-ostrov-k.jpg" alt="Какой-то остров" />
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/korolevskij-bor-v-lesnichestve-grenc.jpg" alt="Forest" />
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/50248110962_2d169c9d46_b.jpg" alt="River" />
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/22.jpg" alt="Lake" />
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/20.jpg" alt="Mountains" />
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/21.jpg" alt="River" />
+<!--            <img class="img _anim-items _anim-no-hide" src="../images/gallery/19.jpg" alt="Lake" />-->
+<!--            <img class="img _anim-items _anim-no-hide" src="../images/gallery/i%20(1).jpg" alt="Mountains" />-->
+            <img class="img _anim-items _anim-no-hide" src="../images/gallery/15.jpg" alt="Кривые деревья">
+        </div>
+        <div class="modal">
+            <span class="close">Закрыть</span>
+            <div class="modalContent">
+                <img src="" class="modalImg" />
+                <span class="modalTxt"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/animation-on-scroll.js"></script>
+    <script>
+        const images = document.querySelectorAll(".images img");
+        const modal = document.querySelector(".modal");
+        const modalImg = document.querySelector(".modalImg");
+        const modalTxt = document.querySelector(".modalTxt");
+        const close = document.querySelector(".close");
+
+        images.forEach((image) => {
+            image.addEventListener("click", () => {
+                modalImg.src = image.src;
+                modalTxt.innerHTML = image.alt;
+                modal.classList.add("appear");
+
+                close.addEventListener("click", () => {
+                    modal.classList.remove("appear");
+                });
+            });
+        });
+    </script>
+</body>
+</html>

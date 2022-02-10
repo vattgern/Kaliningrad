@@ -1,0 +1,360 @@
+@media screen and (min-width: 1600px){
+    .tours{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .tours-header{
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tours-header h1{
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 3vw;
+        letter-spacing: 1rem;
+    }
+    .tours-content{
+        width: 100%;
+        padding: 3%;
+    }
+    .tours-cards{
+        display: flex;
+        background: whitesmoke;
+        width: 80%;
+        height: 500px;
+        margin: 5% auto;
+        padding: 2.5%;
+        transition: all 0.8s ease;
+    }
+    #tour-2{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: -100%;
+        top: 80vh;
+    }
+    .card-1{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    .card-1._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .card-2{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    .card-2._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .card-image{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-image img{
+        width: 80%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .card-text{
+        width: 50%;
+        font-family: "Open Sans Light", sans-serif;
+        position: relative;
+    }
+    .card-text h1{
+        margin-bottom: 5%;
+        font-size: 2vw;
+    }
+    .card-text p{
+        font-size: 1.05vw;
+    }
+    .card-text ul{
+        list-style-type: circle;
+        font-size: 1vw;
+    }
+    .card-text button{
+        padding: 2.5% 5%;
+        font-family: 'Playfair Display', serif;
+        outline: none;
+        border: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        transition: all .4s ease;
+        cursor: pointer;
+    }
+    .card-text button::before{
+        content: '';
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: all .4s ease;
+        z-index: -1;
+    }
+    .card-text button:hover::before{
+        height: 100%;
+    }
+    .card-text button:hover{
+        color: white;
+    }
+}
+@media screen and (min-width: 1366px) and (max-width: 1599.9px){
+    .tours{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: white;
+    }
+    .tours-header{
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tours-header h1{
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 3vw;
+        letter-spacing: 1rem;
+    }
+    .tours-content{
+        width: 100%;
+        padding: 3%;
+    }
+    .tours-cards{
+        display: flex;
+        background: whitesmoke;
+        width: 70%;
+        height: 500px;
+        margin: 7.5% auto;
+        padding: 2.5%;
+        transition: all 0.8s ease;
+        position: relative;
+    }
+    .tour-card-shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+    #tour-2{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: -100%;
+        top: 80vh;
+    }
+    .card-1{
+        transform: translateX(-50%);
+        opacity: 0;
+        background-image: url("../images/back-tour-1-new.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom right;
+        color: white;
+    }
+    .card-1._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .card-2{
+        transform: translateX(-50%);
+        opacity: 0;
+        background-image: url("../images/back-tour-2-new.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        backdrop-filter: opacity(0%);
+    }
+    .card-2._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    /*.card-image{*/
+    /*    width: 50%;*/
+    /*    height: 100%;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+    /*.card-image img{*/
+    /*    width: 80%;*/
+    /*    height: 100%;*/
+    /*    object-fit: contain;*/
+    /*}*/
+    .card-image img{
+        display: none;
+    }
+    .card-text{
+        width: 50%;
+        font-family: "Open Sans Light", sans-serif;
+        position: relative;
+        z-index: 3;
+    }
+    .card-text h1{
+        margin-bottom: 5%;
+        font-size: 2vw;
+        font-family: 'Playfair Display', serif;
+    }
+    .card-text p{
+        font-size: 1.05vw;
+    }
+    .card-text ul{
+        list-style-type: circle;
+        font-size: 1vw;
+    }
+    .card-text button{
+        padding: 2.5% 5%;
+        font-family: 'Playfair Display', serif;
+        outline: none;
+        border: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        transition: all .4s ease;
+        cursor: pointer;
+    }
+    .card-text button::before{
+        content: '';
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: all .4s ease;
+        z-index: -1;
+    }
+    .card-text button:hover::before{
+        height: 100%;
+    }
+    .card-text button:hover{
+        color: white;
+    }
+}
+@media screen and (max-width: 380px) and (min-width: 375px){
+    .tours{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .tours-header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15% 0;
+    }
+    .tours-header h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        letter-spacing: 1rem;
+    }
+    .tours-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tours-cards{
+        width: 70%;
+        padding: 2.5% 7.5%;
+        background-color: whitesmoke;
+        margin: 5% 0;
+    }
+    .card-text h1{
+        font-family: 'Playfair Display', serif;
+        margin: 5% 0;
+    }
+    .card-text p{
+        font-family: "Open Sans Light", sans-serif;
+        margin: 5% 0;
+    }
+    .card-text button{
+        font-family: 'Playfair Display', serif;
+        padding: 5% 5%;
+        border: none;
+        outline: none;
+        background-color: #222222;
+        color: white;
+        margin: 5%;
+    }
+    .card-text ul{
+        font-family: "Open Sans Light", sans-serif;
+    }
+    .card-2{
+        position: relative;
+    }
+    .card-2 .card-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .card-2 .card-text{
+        margin-top: 130%;
+    }
+    .card-2 .card-image{
+        padding: 2.5% 7.5%;
+    }
+    #tour-2{
+        position: absolute;
+        left: 0;
+        top: 45%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
