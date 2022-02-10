@@ -32,4 +32,15 @@ window.addEventListener("DOMContentLoaded",()=>{
             });
         }
     }
+    let buys = document.querySelectorAll(".buy");
+    for(let buy of buys){
+        buy.addEventListener("click", ()=>{
+            window.location.href = "#sale";
+            document.body.style.overflowY="scroll";
+            document.querySelector(".area-open-cards").style.opacity = "0";
+            document.querySelector(".area-open-cards").style.transform = "translateX(100%)";
+            document.querySelector(".open-card-1").style.display = "none";
+            document.querySelector(".open-card-2").style.display = "none";
+        });
+    }
 });
