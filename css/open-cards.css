@@ -212,6 +212,7 @@
         align-items: center;
         transform: translateX(-100%);
         opacity: 0;
+        z-index: 5;
     }
     .btn_exit{
         width: 30px;
@@ -248,9 +249,11 @@
         width: 70%;
         display: flex;
         flex-direction: column;
-        z-index: 3;
+        position: relative;
+        z-index: 6;
         background-color: whitesmoke;
         padding: 5%;
+        overflow-x: hidden;
     }
     .open-card-content h1{
         font-family: 'Playfair Display', serif;
@@ -269,9 +272,9 @@
         background-color: #222222;
     }
     .open-card-1{
-        margin-top: 100%;
+        margin-top: 425%;
     }
     .open-card-2{
-        margin-top: 120%;
+        margin-top: 145%;
     }
 }

@@ -6,7 +6,7 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        background: url("../images/back-header.jpeg") no-repeat fixed center;
+        background: url("../images/back-header.jpeg") no-repeat fixed bottom right;
         background-size: cover;
     }
     .header-back-shadow{
@@ -319,6 +319,9 @@
     }
 }
 @media screen and (max-width: 1365px) and (min-width: 375px){
+    html,body{
+        overflow-x: hidden;
+    }
     header{
         width: 100%;
         height: 100vh;
@@ -408,35 +411,39 @@
         background-color: white;
     }
     .header-list-ul{
-        width: 200px;
-        height: 300px;
-        background-color: rgba(255, 255, 255, 0.5);
+        width: 325px;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 3;
-        font-family: 'Playfair Display', serif;
         display: none;
-        transition: all 0.4s ease;
+        font-family: 'Playfair Display', serif;
+    }
+    .header-list-ul li a{
+        width: 100%;
+        text-decoration: none;
     }
     .burger-menu-move{
-        transform: translateX(-200px);
+        transform: translateX(-325px);
     }
     .list-none{
-        display: block;
-        z-index: 3;
-    }
-    .header-list-ul li{
-        width: 100%;
-        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        z-index: 5;
     }
     .header-list-ul a{
         width: 100%;
         height: 100%;
-        color: black;
+        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .inner-block{
+        z-index: 10;
+        height: 40px;
     }
     .header-content{
         width: 100%;
@@ -446,6 +453,7 @@
         align-items: center;
         transition: all .4s ease-in;
         z-index: 2;
+        position: relative;
     }
     .header-content p{
         font-family: 'Playfair Display', serif;
@@ -453,6 +461,7 @@
         font-size:  1.75rem;
         letter-spacing: 0.5rem;
         z-index: 2;
+        margin-left: 5%;
     }
     .arrow-down{
         width: 100%;

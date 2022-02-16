@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded",()=>{
                document.querySelector(".open-card-2").style.display = "flex";
                document.querySelector(".area-open-cards").style.transform = "translateX(0%)";
                document.querySelector(".area-open-cards").style.transform = "translateY(65%)";
-               if(window.innerWidth > 400){
+               if(window.innerWidth > 500){
                    document.body.style.overflowY = "hidden";
                }
             });
